@@ -16,7 +16,9 @@ Spark Log Analysis 프로젝트
 
 ### 절차
 ![Project Architecture](https://raw.githubusercontent.com/david-changwoolee/spark-log-analysis-project/main/project%20architecture.jpg)
-![test](spark-log-analysis-project/project architecture.jpg)
+![test](/project architecture.jpg)
+![test2](david-changwoolee/spark-log-analysis-project/project architecture.jpg)
+
 * Spark Streaming 을 이용하여 Log API 로부터 Log 를 읽는다.
 * Spark 에서 Log 를 전처리한다.
 * 전처리한 데이터를 Kafka 에 넣는다.
