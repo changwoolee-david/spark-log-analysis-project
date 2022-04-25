@@ -1,11 +1,14 @@
-Spark Log Analysis 프로젝트
+Data Pipeline 만들기 프로젝트
 ===========================
 
 ### 프로젝트 개요
-* Spark, Kafka, NiFi 등 Data Engineering 기술들을 이용하여 Log API (Twitter 등) 로부터 Log 를 받아 Extract, Transform 하고 HDFS(, MongoDB 등의 데이터 저장 서비스로 Load 하는 Data Pipeline 을 구현한다.
-* Local 컴퓨터 위에 Docker 로 구현한 분산 환경에서 프로젝트를 진행한다
+* Hadoop, Hive, Spark, Airflow 등 Data Engineering 기술들을 이용하여 데이터 파이프라인 구축한다.
+* 인터넷으로부터 데이터를 받아 처리하는 ETL 파이프라인을 구현한다.
+* Local 컴퓨터 위에 Docker 로 구현한 분산 환경에서 프로젝트를 진행한다.
 * 장애 발생을 대비한 고가용성(High Availability) 기능을 추가한다.
-* Spark 로 데이터를 전처리하고 Hadoop 으로 데이터를 분석 처리한다.
+* Hadoop 에 데이터를 저장하고(Data Lake, Data Warehouse) Spark 로 데이터를 처리하고(ETL) Hive 에 데이터를 넣는다(Data Mart).
+
+#### 추가 구현 옵션
 * Grafana 등을 사용하여 데이터 Monitoring Dashboard 를 제작한다.
 * 프로젝트 완료 후에는 실제 업무에 사용한다는 가정 하에 장애/부하 테스트를 진행하고, 기능 최적화를 한다.
 * 사용한 코드 및 기술을 Github 에 모두 업로드하고 설명을 덧붙인다.
@@ -14,7 +17,7 @@ Spark Log Analysis 프로젝트
 * Bigdata Engineer 로서 전문성을 키운다.
 * 다양한 Bigdata Platform 을 익힌다.
 
-### 절차
+### 절차 (수정중)
 ![Project Architecture](https://raw.githubusercontent.com/david-changwoolee/spark-log-analysis-project/main/project%20architecture.jpg)
 
 * Spark Streaming 을 이용하여 Log API 로부터 Log 를 읽는다.
@@ -25,7 +28,7 @@ Spark Log Analysis 프로젝트
 * 분석한 데이터는 HDFS 에 저장한다.
 * Hive 를 통해 Grafana 에서 Query 할 수 있도록 하고 모니터링한다.
 
-### To-Do
+### To-Do (수정중)
 * 구체적인 Log API 찾기
 * 구체적인 데이터 분석 방법 정하기
 * 데이터별로 Kafka Topic 구별하여 사용하기
